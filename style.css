@@ -67,6 +67,11 @@
     color: #FFC700;
 }
 
+.cover{
+    width: 100%;
+    height: 550px;
+}
+
 .container {
     width: 100%;
     height: auto;
@@ -144,6 +149,13 @@
         width: 29%;
     }
 
+    .cover{
+        height: 450px;
+    }
+
+    .cover img{
+        height: 450px;
+    }
 }
 
 @media (max-width:999px) and (min-width:768px){
@@ -154,6 +166,13 @@
     .title {
         width: 40%;
     }
+    .cover{
+        height: 450px;
+    }
+
+    .cover img{
+        height: 450px;
+    }
 }
 
 @media (max-width:768px) and (min-width:480px){
@@ -163,7 +182,28 @@
     }
 
     .title{
-        width: 45%;
+        width: 40%;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    .list{
+        width: 60%;
+    }
+
+    .list ul li a{
+        font-size: 16px;
+    }
+
+
+    .cover{
+        height: 350px;
+    }
+
+    .cover img{
+        height: 350px;
     }
 }
 
@@ -185,6 +225,14 @@
 
     .list ul li a{
         font-size: 16px;
+    }
+
+    .cover{
+        height: 300px;
+    }
+
+    .cover img{
+        height: 300px;
     }
 
 }
