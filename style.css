@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg,
+            hsl(156deg 56% 55%) 0%,
+            hsl(158deg 53% 52%) 8%,
+            hsl(160deg 52% 49%) 17%,
+            hsl(162deg 55% 46%) 25%,
+            hsl(164deg 59% 44%) 34%,
+            hsl(166deg 63% 41%) 44%,
+            hsl(168deg 67% 38%) 53%,
+            hsl(169deg 73% 35%) 62%,
+            hsl(171deg 79% 32%) 72%,
+            hsl(172deg 86% 30%) 81%,
+            hsl(173deg 94% 27%) 91%,
+            hsl(174deg 100% 25%) 100%);
+            border-bottom: 2px solid #FFF455;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 80px;
+}
+
+.title h1 {
+    font-size: 30px;
+    color: #FFF455;
+    text-decoration: underline;
+    text-decoration-color: #FFC700;
+}
+
+.list {
+    width: 50%;
+    height: 80px;
+}
+
+.list ul {
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list ul li {
+    list-style: none;
+}
+
+.list ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFC700;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(0deg,
+            hsl(156deg 56% 55%) 0%,
+            hsl(158deg 53% 52%) 8%,
+            hsl(160deg 52% 49%) 17%,
+            hsl(162deg 55% 46%) 25%,
+            hsl(164deg 59% 44%) 34%,
+            hsl(166deg 63% 41%) 44%,
+            hsl(168deg 67% 38%) 53%,
+            hsl(169deg 73% 35%) 62%,
+            hsl(171deg 79% 32%) 72%,
+            hsl(172deg 86% 30%) 81%,
+            hsl(173deg 94% 27%) 91%,
+            hsl(174deg 100% 25%) 100%);
+            display: flex;
+            justify-content: space-evenly;
+            flex-flow:  row wrap;
+            
+}
+
+.card{
+    border: 3px solid #FFC700;
+    width: 22%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.card .img{
+    width: 100%;
+    height: 250px;
+}
+
+
+.card .naam,
+.card .price,
+.card .button{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+}
+
+.card .naam h2{
+    font-size: 22px;
+    color: #FFC700;
+    text-decoration: underline;
+    text-decoration-color:#4CCD99 ;
+}
+
+.card .price h3{
+    font-size: 22px;
+    color:#FFC700 ;
+    text-decoration: underline;
+    text-decoration-color:black ;
+}
+
+.card .button button{
+    width: 35%;
+    height: 35px;
+    font-size: 14px;
+    border: 2px solid #FFC700;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+@media (max-width: 1280px) and (min-width:1000px){
+
+    .card{
+        width: 29%;
+    }
+
+}
+
+@media (max-width:999px) and (min-width:768px){
+    .card{
+        width: 38%;
+    }
+    
+    .title {
+        width: 40%;
+    }
+}
+
+@media (max-width:768px) and (min-width:480px){
+ 
+    .card{
+        width: 48%;
+    }
+
+    .title{
+        width: 45%;
+    }
+}
+
+@media (max-width:480px) {
+    .card{
+        width: 80%;
+    }
+    .title{
+        width: 40%;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    .list{
+        width: 60%;
+    }
+
+    .list ul li a{
+        font-size: 16px;
+    }
+
+}
